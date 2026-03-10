@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Servicio Profesional de Consolas y Controles</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#0f172a;
+color:white;
+line-height:1.6;
+}
+
+/* HEADER */
+
+header{
+background:linear-gradient(120deg,#020617,#1e293b);
+padding:90px 20px;
+text-align:center;
+}
+
+header h1{
+font-size:50px;
+color:#22c55e;
+}
+
+header p{
+margin-top:10px;
+font-size:18px;
+color:#cbd5f5;
+}
+
+/* MENU */
+
+nav{
+background:#020617;
+display:flex;
+justify-content:center;
+gap:35px;
+padding:15px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:500;
+}
+
+nav a:hover{
+color:#22c55e;
+}
+
+/* CONTENEDOR */
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:60px 20px;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:40px;
+font-size:34px;
+color:#22c55e;
+}
+
+/* TARJETAS */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#1e293b;
+border-radius:12px;
+padding:25px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 10px 25px rgba(0,0,0,0.6);
+}
+
+.card h3{
+color:#22c55e;
+margin-bottom:10px;
+}
+
+/* PRECIOS */
+
+.price-card{
+background:#1e293b;
+padding:30px;
+border-radius:12px;
+text-align:center;
+}
+
+.price{
+font-size:34px;
+color:#22c55e;
+margin:10px 0;
+}
+
+/* GALERIA */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+border-radius:10px;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#22c55e;
+color:black;
+padding:15px 20px;
+border-radius:50px;
+font-weight:bold;
+text-decoration:none;
+}
+
+/* CONTACTO */
+
+.contact{
+background:#020617;
+text-align:center;
+padding:60px 20px;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+background:#020617;
+color:#94a3b8;
+font-size:14px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Servicio Profesional de Consolas</h1>
+<p>Mantenimiento de consolas y reparación especializada de controles</p>
+
+</header>
+
+<nav>
+
+<a href="#servicios">Servicios</a>
+<a href="#precioscontroles">Precios Controles</a>
+<a href="#preciosconsolas">Precios Consolas</a>
+<a href="#proceso">Proceso</a>
+<a href="#trabajos">Trabajos</a>
+<a href="#contacto">Contacto</a>
+
+</nav>
+
+<section class="container" id="servicios">
+
+<h2 class="section-title">Nuestros Servicios</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Mantenimiento de Consolas</h3>
+<p>
+Limpieza interna profunda, eliminación de polvo,
+revisión del sistema de ventilación y mantenimiento
+para evitar sobrecalentamiento.
+</p>
+</div>
+
+<div class="card">
+<h3>Reparación de Controles</h3>
+<p>
+Reparación de drift en joystick, botones que no responden,
+problemas de conexión, gatillos dañados y limpieza interna.
+</p>
+</div>
+
+<div class="card">
+<h3>Diagnóstico Técnico</h3>
+<p>
+Revisión completa para detectar fallas electrónicas
+o mecánicas en consolas y controles.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="container" id="precioscontroles">
+
+<h2 class="section-title">Precios Reparación de Controles</h2>
+
+<div class="grid">
+
+<div class="price-card">
+<h3>PS5 / Xbox Series X</h3>
+<p class="price">$1050</p>
+<p>Reparación completa de joystick, botones o gatillos.</p>
+</div>
+
+<div class="price-card">
+<h3>PS4 / PS3</h3>
+<p class="price">$650</p>
+<p>Reparación de drift, botones o mantenimiento.</p>
+</div>
+
+<div class="price-card">
+<h3>Xbox Series S / Xbox 360</h3>
+<p class="price">$650</p>
+<p>Reparación de joystick y limpieza interna.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="container" id="preciosconsolas">
+
+<h2 class="section-title">Precios Mantenimiento de Consolas</h2>
+
+<div class="grid">
+
+<div class="price-card">
+<h3>PS3 / Xbox 360</h3>
+<p class="price">$950</p>
+<p>Limpieza interna y mantenimiento general.</p>
+</div>
+
+<div class="price-card">
+<h3>PS4 / Xbox One / Series S</h3>
+<p class="price">$1250</p>
+<p>Mantenimiento completo del sistema de ventilación.</p>
+</div>
+
+<div class="price-card">
+<h3>PS5 / Xbox Series X</h3>
+<p class="price">$1450</p>
+<p>Mantenimiento completo profesional.</p>
+</div>
+
+<div class="price-card">
+<h3>Mantenimiento con Pasta Térmica</h3>
+<p class="price">$1650</p>
+<p>Incluye pasta térmica Thermal Grizzly de alto rendimiento.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="container" id="proceso">
+
+<h2 class="section-title">Proceso de Reparación</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>1. Diagnóstico</h3>
+<p>Revisamos tu consola o control para detectar el problema.</p>
+</div>
+
+<div class="card">
+<h3>2. Reparación</h3>
+<p>Realizamos la reparación con herramientas profesionales.</p>
+</div>
+
+<div class="card">
+<h3>3. Pruebas</h3>
+<p>Probamos el funcionamiento para asegurar que todo esté correcto.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="container" id="trabajos">
+
+<h2 class="section-title">Trabajos Realizados</h2>
+
+<div class="gallery">
+
+<img src="https://images.pexels.com/photos/19987742/pexels-photo-19987742.jpeg">
+
+<img src="https://images.unsplash.com/photo-1592840496694-26d035b52b48">
+
+<img src="https://images.unsplash.com/photo-1606144042614-b2417e99c4e3">
+
+</div>
+
+</section>
+
+<section class="contact" id="contacto">
+
+<h2>Contacto</h2>
+
+<p>Solicita tu reparación por WhatsApp</p>
+
+<br>
+
+<p><strong>WhatsApp:</strong> 2212186373</p>
+
+</section>
+
+<a class="whatsapp" href="https://wa.me/522212186373" target="_blank">
+WhatsApp
+</a>
+
+<footer>
+
+<p>© 2026 Servicio Profesional de Consolas</p>
+<p>Imágenes libres de copyright: Pexels / Unsplash</p>
+
+</footer>
+
+</body>
+</html>
+```
